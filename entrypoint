@@ -2,7 +2,7 @@
 #set -x
 unset DEBIAN_FRONTEND
 
-if ls /var/www/* >/dev/null 2>&1
+if ls -- /var/www/* >/dev/null 2>&1
 then 
 	if su -s /bin/bash www-data -c 'ls /var/www/*' >/dev/null 2>&1
 	then 
@@ -21,7 +21,7 @@ then
 else
 	echo "No files in /var/www"
 	echo "You need to mount a directory on /var/www for example:"
-	echo "docker run -it -v c:/user/andrewt/cgi:/var/www comp2041/webserver"
+	echo "docker run -v c:/user/andrewt/cgi:/var/www comp2041/webserver"
 	exit
 fi
 
