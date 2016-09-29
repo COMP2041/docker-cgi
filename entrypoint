@@ -21,7 +21,7 @@ then
 else
 	echo "No files in /var/www"
 	echo "You need to mount a directory on /var/www for example:"
-	echo "docker run -v c:/user/andrewt/cgi:/var/www comp2041/webserver"
+	echo "docker run -v c:/users/andrewt/cgi:/var/www comp2041/webserver"
 	exit
 fi
 
