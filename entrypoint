@@ -1,5 +1,4 @@
 #!/bin/bash
-#set -x
 unset DEBIAN_FRONTEND
 
 if test -z "`ls /var/www 2>/dev/null`"
