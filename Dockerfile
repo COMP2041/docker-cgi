@@ -1,6 +1,6 @@
 FROM comp2041/sh 
 RUN apt-get update &&\
-	apt-get install -y --no-install-recommends apache2 net-tools libcgi-pm-perl &&\
+	apt-get install -y --no-install-recommends apache2 net-tools &&\
     rm -rf /var/lib/apt/lists/* &&\
     rm -rf /var/www/html &&\
     a2enmod rewrite &&\
